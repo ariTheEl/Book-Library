@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./scripts/script.js" defer></script>
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Document</title>
+    <title>LIBRARY</title>
 </head>
 <body>
     <h1>
         Ari-El's Magical Library</h1>
         <h3>The Perfect Book Paradise</h3>
-        <button id="btn-one">
-            NEW BOOK
-        </button>
-        <button id="btn-two">OPEN BOOK SHELF</button>
+        <div class="buttons">
+            <button id="btn-one">
+                NEW BOOK
+            </button>
+            <button class="btn-two" id="btn-two">OPEN BOOK SHELF</button>
+        </div>
         <form action="" method="get">
             <label for="book-title">Book Title</label>
             <input type="text" name="book-title" id="book-title">
@@ -27,5 +29,7 @@
             <input type="checkbox" name="status" id="status">
             <button type="submit" id="submit-btn">SUBMIT</button>
         </form>
+        <div class="book-display"></div>
 </body>
+
 </html>

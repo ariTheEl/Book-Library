@@ -1,7 +1,71 @@
+html{
+    height: 100vh;
+    box-sizing: border-box;
+    font-size: 10px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2), rgba(0,0,0,0.7))
+    ,url(/images/pexels-xenianowa-11699570.jpg); 
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+h1{
+    box-shadow: 2px 3px 3px 2px rgb(26, 24, 24);
+    justify-self:center;
+    background: rgb(68, 85, 38);
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    border-right: 1.4rem #e99 solid;
+    font-size: 10rem;
+    color: #e99;
+    filter:opacity(0.75);
+    transition: all 450ms ease-in-out;
+}
+h1:hover{
+    border-left: 2rem rgb(68, 85, 38) solid;
+    background: #e99;
+    color:rgb(68, 85, 38);
+    font-family: cursive;
+}
+
+h3{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    right: 30%;
+    font-size: 5rem;
+    color:rgb(68, 85, 38) ;
+}
 form{
     display: none;
 }
 form.display{
     display: flex;
     flex-direction: column;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+button{
+    width: 10rem;
+    height: 5rem;
+    border-radius: 2rem;
+    border: 0;
+    color: #e99;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-right: 1rem #e99 solid;
+    background-color:rgb(68, 85, 38) ;
+    transition: all 375ms ease-in-out;
+}
+button:hover{
+    border-left: 1rem rgb(68, 85, 38) solid;
+    background: #e99;
+    color:rgb(68, 85, 38);
+}
+.btn-two{
+    display:inline-block;
 }

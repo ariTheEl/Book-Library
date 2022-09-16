@@ -1,4 +1,6 @@
 let myLibrary = [];
+
+let bookDisplay = document.querySelector('.book-display')
 const form = document.querySelector('form');
 const btn = document.querySelector('#btn-one');
 const btnTwo = document.querySelector('#btn-two');
@@ -23,14 +25,12 @@ class Book {
 
 function storeBook(e){
     e.preventDefault();
-   let book = new Book(title.value, author.value, numberOfPages.value, status.value)
-   console.log(book.info());
+   let book = new Book(title.value, author.value, numberOfPages.value, status.value);
    myLibrary.unshift(book);
-   console.log(myLibrary)
 };
 
 function displayBook() {
-   
+  myLibrary.forEach()
 };
 
 function addBook(){
@@ -42,5 +42,5 @@ function addBook(){
 btn.addEventListener('click', addBook);
 btnTwo.addEventListener("click", displayBook)
 submitBtn.addEventListener('click', storeBook)
- 
+ //add buttons to each book's display to remove the book from the library(You will need to associate your DOM elements with actual book objects by giving them a data attribute that corresponds to the books index in the Library array), and to change the read status of the book(You may create a function that toggles a books read status on the book prototype)
  
